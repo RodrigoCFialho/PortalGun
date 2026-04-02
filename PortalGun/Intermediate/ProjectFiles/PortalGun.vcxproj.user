@@ -33,7 +33,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win64_x64_Development_Editor|x64'">
     <LocalDebuggerCommandArguments>"$(SolutionDir)PortalGun.uproject" -skipcompile</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArgumentsHistory>"C:\Users\rodri\Documents\Unreal Projects\PortalGun\PortalGun.uproject" -skipcompile|</LocalDebuggerCommandArgumentsHistory>
+    <LocalDebuggerCommandArgumentsHistory>"C:\Users\rodri\Documents\Unreal Projects\PortalGun\PortalGun.uproject" -skipcompile|"C:\Users\rodri\Documents\GitHub\PortalGun\PortalGun\PortalGun.uproject" -skipcompile|</LocalDebuggerCommandArgumentsHistory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win64_arm64_Development_Editor|x64'">
     <RemoteDebuggerCommandArguments>"$(SolutionDir)PortalGun.uproject" -skipcompile</RemoteDebuggerCommandArguments>

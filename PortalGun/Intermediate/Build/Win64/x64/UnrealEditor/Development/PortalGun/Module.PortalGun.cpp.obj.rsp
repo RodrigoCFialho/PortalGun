@@ -1,12 +1,12 @@
-"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp"
-@"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/PortalGun.Shared.rsp"
-/FI"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/FI"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Definitions.PortalGun.h"
-/Yu"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/Fp"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.obj"
-/experimental:log "C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.sarif"
-/sourceDependencies "C:/Users/rodri/Documents/Unreal Projects/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.dep.json"
+"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp"
+@"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/PortalGun.Shared.rsp"
+/FI"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Definitions.PortalGun.h"
+/Yu"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/PortalGunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.obj"
+/experimental:log "C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.sarif"
+/sourceDependencies "C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Intermediate/Build/Win64/x64/UnrealEditor/Development/PortalGun/Module.PortalGun.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi

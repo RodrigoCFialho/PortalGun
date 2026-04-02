@@ -66,6 +66,12 @@
     <ClInclude Include="..\..\Source\PortalGun\PortalGunPlayerController.h">
       <Filter>Source\PortalGun</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PortalGun\PortalWall.cpp">
+      <Filter>Source\PortalGun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortalGun\PortalWall.h">
+      <Filter>Source\PortalGun</Filter>
+    </ClInclude>
     <Filter Include="Source\PortalGun\Variant_Horror">
       <UniqueIdentifier>{EB629037-06A9-3D07-8155-AD547BFEE4FE}</UniqueIdentifier>
     </Filter>

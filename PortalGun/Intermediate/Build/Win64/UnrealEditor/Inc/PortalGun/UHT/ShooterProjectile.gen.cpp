@@ -356,14 +356,14 @@ AShooterProjectile::~AShooterProjectile() {}
 // ********** End Class AShooterProjectile *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics
+struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AShooterProjectile, AShooterProjectile::StaticClass, TEXT("AShooterProjectile"), &Z_Registration_Info_UClass_AShooterProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterProjectile), 3003841396U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_1309332413(TEXT("/Script/PortalGun"),
-	Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_1309332413(TEXT("/Script/PortalGun"),
+	Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_Weapons_ShooterProjectile_h__Script_PortalGun_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

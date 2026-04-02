@@ -6,11 +6,7 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/E/PG/H2H3CGTM0JTVKIZU0J7OC2.uasset",
-				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Mirror.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Variant_Shooter/Blueprints/BP_ShooterCharacter.uasset",
-				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/M_Mirror.uasset",
-				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/RT_Mirror.uasset",
-				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/BP_Mirror.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Blueprints/BP_Mirror.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Materials/M_Mirror.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Textures/RT_Mirror.uasset",
@@ -22,7 +18,29 @@
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Blueprints/BP_PortalOrange.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Textures/RT_PortalOrange.uasset",
 				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Materials/M_PortalOrange.uasset",
-				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/7/WI/XAZGYCZ5F294S4FUAKO0FI.uasset"
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/7/WI/XAZGYCZ5F294S4FUAKO0FI.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Textures/SM_Portal.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Textures/SM_PortalBorder.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Textures/SM_PortalWall.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Blueprints/BP_PortalWall.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Materials/M_PortalWall.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/7/GC/V36F4HW4RVBEEECGBRR0FS.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Blueprints/BP_PortalBlue.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Blueprints/BP_PortalOrange.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Textures/RT_PortalBlue.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/Textures/RT_PortalOrange.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/FirstPerson/Blueprints/BP_FirstPersonGameMode.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/E/PG/H2H3CGTM0JTVKIZU0J7OC2.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/__ExternalActors__/Variant_Shooter/Lvl_Shooter/6/HK/WBN373R14SBX6NJ2K8QXXG.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/SM_PortalWall.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/SM_PortalBorder.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/SM_Portal.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/7/WI/XAZGYCZ5F294S4FUAKO0FI.uasset",
+				"C:/Users/rodri/Documents/GitHub/PortalGun/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/5/76/XFLYVGITPNNMPGCPQ37B9L.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/M_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/RT_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/BP_Mirror.uasset"
 			]
 		}
 	]

@@ -287,14 +287,14 @@ AShooterNPC::~AShooterNPC() {}
 // ********** End Class AShooterNPC ****************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics
+struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AShooterNPC, AShooterNPC::StaticClass, TEXT("AShooterNPC"), &Z_Registration_Info_UClass_AShooterNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterNPC), 572065473U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_3967034601(TEXT("/Script/PortalGun"),
-	Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_3967034601(TEXT("/Script/PortalGun"),
+	Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_AI_ShooterNPC_h__Script_PortalGun_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

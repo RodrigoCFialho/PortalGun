@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class APortalGunCameraManager **************************************************
 PORTALGUN_API UClass* Z_Construct_UClass_APortalGunCameraManager_NoRegister();
 
-#define FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPortalGunCameraManager(); \
 	friend struct Z_Construct_UClass_APortalGunCameraManager_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(APortalGunCameraManager)
 
 
-#define FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	APortalGunCameraManager(APortalGunCameraManager&&) = delete; \
 	APortalGunCameraManager(const APortalGunCameraManager&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~APortalGunCameraManager();
 
 
-#define FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_13_PROLOG
-#define FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_GENERATED_BODY \
+#define FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_13_PROLOG
+#define FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class APortalGunCameraManager;
 // ********** End Class APortalGunCameraManager ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_rodri_Documents_Unreal_Projects_PortalGun_Source_PortalGun_PortalGunCameraManager_h
+#define CURRENT_FILE_ID FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalGunCameraManager_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

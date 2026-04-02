@@ -279,6 +279,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\PortalGun\PortalGunPlayerController.h"/>
+    <ClCompile Include="..\..\Source\PortalGun\PortalWall.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortalGun\PortalWall.h"/>
     <ClCompile Include="..\..\Source\PortalGun\Variant_Horror\HorrorCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
