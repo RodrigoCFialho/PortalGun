@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterweapon.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\portalguneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portalgun\\definitions.portalgun.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterweapon.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterweaponholder.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\unrealeditor\\inc\\portalgun\\uht\\shooterweaponholder.generated.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\unrealeditor\\inc\\portalgun\\uht\\shooterweapon.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterprojectile.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\unrealeditor\\inc\\portalgun\\uht\\shooterprojectile.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

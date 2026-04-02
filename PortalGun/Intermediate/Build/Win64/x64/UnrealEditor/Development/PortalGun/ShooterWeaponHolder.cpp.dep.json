@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterweaponholder.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\portalguneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portalgun\\definitions.portalgun.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_shooter\\weapons\\shooterweaponholder.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\unrealeditor\\inc\\portalgun\\uht\\shooterweaponholder.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,29 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/E/PG/H2H3CGTM0JTVKIZU0J7OC2.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Variant_Shooter/Blueprints/BP_ShooterCharacter.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/M_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/RT_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/BP_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Blueprints/BP_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Materials/M_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Textures/RT_Mirror.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/5/MD/L5OOLQLH8WE64RKQIJYPL3.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/5/76/XFLYVGITPNNMPGCPQ37B9L.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Blueprints/BP_PortalBlue.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Materials/M_PortalBlue.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Textures/RT_PortalBlue.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Blueprints/BP_PortalOrange.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Textures/RT_PortalOrange.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/Materials/M_PortalOrange.uasset",
+				"C:/Users/rodri/Documents/Unreal Projects/PortalGun/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/7/WI/XAZGYCZ5F294S4FUAKO0FI.uasset"
+			]
+		}
+	]
+}

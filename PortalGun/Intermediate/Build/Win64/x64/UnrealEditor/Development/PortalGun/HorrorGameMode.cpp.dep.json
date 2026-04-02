@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_horror\\horrorgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\portalguneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portalgun\\definitions.portalgun.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\source\\portalgun\\variant_horror\\horrorgamemode.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\rodri\\documents\\unreal projects\\portalgun\\intermediate\\build\\win64\\unrealeditor\\inc\\portalgun\\uht\\horrorgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
