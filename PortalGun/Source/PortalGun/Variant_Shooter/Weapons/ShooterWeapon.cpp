@@ -123,6 +123,42 @@ void AShooterWeapon::StopFiring()
 	GetWorld()->GetTimerManager().ClearTimer(RefireTimer);
 }
 
+void AShooterWeapon::StartSecondaryFire()
+{
+	// raise the firing flag
+	bIsFiringSecondary = true;
+
+	// check how much time has passed since we last shot
+	// this may be under the refire rate if the weapon shoots slow enough and the player is spamming the trigger
+	const float TimeSinceLastShot = GetWorld()->GetTimeSeconds() - TimeOfLastShot;
+
+	if (TimeSinceLastShot > RefireRate)
+	{
+		// fire the weapon's secondary fire mode right away
+		SecondaryFire();
+
+	}
+	else 
+	{
+
+		// if we're full auto, schedule the next shot
+		if (bFullAuto)
+		{
+			GetWorld()->GetTimerManager().SetTimer(RefireTimer, this, &AShooterWeapon::Fire, TimeSinceLastShot, false);
+		}
+
+	}
+}
+
+void AShooterWeapon::StopSecondaryFire()
+{
+	// lower the firing flag
+	bIsFiringSecondary = false;
+
+	// clear the refire timer
+	GetWorld()->GetTimerManager().ClearTimer(RefireTimer);
+}
+
 void AShooterWeapon::Fire()
 {
 	// ensure the player still wants to fire. They may have let go of the trigger
@@ -130,7 +166,7 @@ void AShooterWeapon::Fire()
 	{
 		return;
 	}
-	
+
 	// fire a projectile at the target
 	FireProjectile(WeaponOwner->GetWeaponTargetLocation());
 
@@ -146,6 +182,43 @@ void AShooterWeapon::Fire()
 		// schedule the next shot
 		GetWorld()->GetTimerManager().SetTimer(RefireTimer, this, &AShooterWeapon::Fire, RefireRate, false);
 	} else {
+
+		// for semi-auto weapons, schedule the cooldown notification
+		GetWorld()->GetTimerManager().SetTimer(RefireTimer, this, &AShooterWeapon::FireCooldownExpired, RefireRate, false);
+
+	}
+}
+
+void AShooterWeapon::SecondaryFire()
+{
+	// ensure the player still wants to fire. They may have let go of the trigger
+	if (!bIsFiringSecondary)
+	{
+		return;
+	}
+
+	if (bHasSecondaryFire)
+	{
+		FireSecondaryProjectile(WeaponOwner->GetWeaponTargetLocation());
+	}
+	else
+	{
+		return;
+	}
+
+	// update the time of our last shot
+	TimeOfLastShot = GetWorld()->GetTimeSeconds();
+
+	// make noise so the AI perception system can hear us
+	MakeNoise(ShotLoudness, PawnOwner, PawnOwner->GetActorLocation(), ShotNoiseRange, ShotNoiseTag);
+
+	// are we full auto?
+	if (bFullAuto)
+	{
+		// schedule the next shot
+		GetWorld()->GetTimerManager().SetTimer(RefireTimer, this, &AShooterWeapon::Fire, RefireRate, false);
+	}
+	else {
 
 		// for semi-auto weapons, schedule the cooldown notification
 		GetWorld()->GetTimerManager().SetTimer(RefireTimer, this, &AShooterWeapon::FireCooldownExpired, RefireRate, false);
@@ -172,6 +245,39 @@ void AShooterWeapon::FireProjectile(const FVector& TargetLocation)
 	SpawnParams.Instigator = PawnOwner;
 
 	AShooterProjectile* Projectile = GetWorld()->SpawnActor<AShooterProjectile>(ProjectileClass, ProjectileTransform, SpawnParams);
+
+	// play the firing montage
+	WeaponOwner->PlayFiringMontage(FiringMontage);
+
+	// add recoil
+	WeaponOwner->AddWeaponRecoil(FiringRecoil);
+
+	// consume bullets
+	--CurrentBullets;
+
+	// if the clip is depleted, reload it
+	if (CurrentBullets <= 0)
+	{
+		CurrentBullets = MagazineSize;
+	}
+
+	// update the weapon HUD
+	WeaponOwner->UpdateWeaponHUD(CurrentBullets, MagazineSize);
+}
+
+void AShooterWeapon::FireSecondaryProjectile(const FVector& TargetLocation)
+{
+	// get the projectile transform
+	FTransform ProjectileTransform = CalculateProjectileSpawnTransform(TargetLocation);
+
+	// spawn the projectile
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	SpawnParams.TransformScaleMethod = ESpawnActorScaleMethod::OverrideRootScale;
+	SpawnParams.Owner = GetOwner();
+	SpawnParams.Instigator = PawnOwner;
+
+	AShooterProjectile* Projectile = GetWorld()->SpawnActor<AShooterProjectile>(SecondaryProjectileClass, ProjectileTransform, SpawnParams);
 
 	// play the firing montage
 	WeaponOwner->PlayFiringMontage(FiringMontage);

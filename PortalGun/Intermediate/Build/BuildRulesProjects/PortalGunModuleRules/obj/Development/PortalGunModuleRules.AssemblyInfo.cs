@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalGunModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1ede7c5c9da745a8436f457f630b7af39efc643")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24db51ede7775f8df25cc5e9de672dea19f441b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalGunModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalGunModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

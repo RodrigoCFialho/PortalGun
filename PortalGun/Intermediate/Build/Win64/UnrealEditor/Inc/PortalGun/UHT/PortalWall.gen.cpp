@@ -59,6 +59,26 @@ struct Z_Construct_UClass_APortalWall_Statics
 		{ "IncludePath", "PortalWall.h" },
 		{ "ModuleRelativePath", "PortalWall.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WallWidth_MetaData[] = {
+		{ "Category", "Portal Wall" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// The width of the wall\n" },
+#endif
+		{ "ModuleRelativePath", "PortalWall.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "The width of the wall" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WallHeight_MetaData[] = {
+		{ "Category", "Portal Wall" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// The height of the wall\n" },
+#endif
+		{ "ModuleRelativePath", "PortalWall.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "The height of the wall" },
+#endif
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PortalWallMesh_MetaData[] = {
 		{ "allowprivateaccess", "TRUE" },
 		{ "Category", "Pickup" },
@@ -72,6 +92,8 @@ struct Z_Construct_UClass_APortalWall_Statics
 #endif
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WallWidth;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WallHeight;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PortalWallMesh;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -80,8 +102,12 @@ struct Z_Construct_UClass_APortalWall_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APortalWall_Statics::NewProp_WallWidth = { "WallWidth", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortalWall, WallWidth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallWidth_MetaData), NewProp_WallWidth_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APortalWall_Statics::NewProp_WallHeight = { "WallHeight", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortalWall, WallHeight), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallHeight_MetaData), NewProp_WallHeight_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortalWall_Statics::NewProp_PortalWallMesh = { "PortalWallMesh", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortalWall, PortalWallMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PortalWallMesh_MetaData), NewProp_PortalWallMesh_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APortalWall_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortalWall_Statics::NewProp_WallWidth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortalWall_Statics::NewProp_WallHeight,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortalWall_Statics::NewProp_PortalWallMesh,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortalWall_Statics::PropPointers) < 2048);
@@ -121,10 +147,10 @@ APortalWall::~APortalWall() {}
 struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalWall_h__Script_PortalGun_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APortalWall, APortalWall::StaticClass, TEXT("APortalWall"), &Z_Registration_Info_UClass_APortalWall, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortalWall), 1128591358U) },
+		{ Z_Construct_UClass_APortalWall, APortalWall::StaticClass, TEXT("APortalWall"), &Z_Registration_Info_UClass_APortalWall, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortalWall), 2810970227U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalWall_h__Script_PortalGun_2437671369(TEXT("/Script/PortalGun"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalWall_h__Script_PortalGun_1794721504(TEXT("/Script/PortalGun"),
 	Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalWall_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_PortalWall_h__Script_PortalGun_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

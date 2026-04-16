@@ -33,6 +33,12 @@
     <Filter Include="Source\PortalGun">
       <UniqueIdentifier>{07CDB815-5E8D-3D3A-ABA2-FBF2C55F36BE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\PortalGun\Portal.cpp">
+      <Filter>Source\PortalGun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortalGun\Portal.h">
+      <Filter>Source\PortalGun</Filter>
+    </ClInclude>
     <None Include="..\..\Source\PortalGun\PortalGun.Build.cs">
       <Filter>Source\PortalGun</Filter>
     </None>

@@ -11,6 +11,16 @@ class PORTALGUN_API APortalWall : public AActor
 {
 	GENERATED_BODY()
 
+protected:
+	virtual void OnConstruction(const FTransform& Transform) override;
+
+	// The width of the wall
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Portal Wall")
+	float WallWidth;
+
+	// The height of the wall
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Portal Wall")
+	float WallHeight;
 
 public:	
 	// Sets default values for this actor's properties

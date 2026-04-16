@@ -189,6 +189,42 @@ DEFINE_FUNCTION(AShooterCharacter::execDoStartFiring)
 }
 // ********** End Class AShooterCharacter Function DoStartFiring ***********************************
 
+// ********** Begin Class AShooterCharacter Function DoStartSecondaryFire **************************
+struct Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Handles start secondary firing input\n" },
+#endif
+		{ "ModuleRelativePath", "Variant_Shooter/ShooterCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Handles start secondary firing input" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AShooterCharacter, nullptr, "DoStartSecondaryFire", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire_Statics::Function_MetaDataParams), Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AShooterCharacter::execDoStartSecondaryFire)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DoStartSecondaryFire();
+	P_NATIVE_END;
+}
+// ********** End Class AShooterCharacter Function DoStartSecondaryFire ****************************
+
 // ********** Begin Class AShooterCharacter Function DoStopFiring **********************************
 struct Z_Construct_UFunction_AShooterCharacter_DoStopFiring_Statics
 {
@@ -224,6 +260,42 @@ DEFINE_FUNCTION(AShooterCharacter::execDoStopFiring)
 	P_NATIVE_END;
 }
 // ********** End Class AShooterCharacter Function DoStopFiring ************************************
+
+// ********** Begin Class AShooterCharacter Function DoStopSecondaryFire ***************************
+struct Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Handles stop secondary firing input\n" },
+#endif
+		{ "ModuleRelativePath", "Variant_Shooter/ShooterCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Handles stop secondary firing input" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AShooterCharacter, nullptr, "DoStopSecondaryFire", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire_Statics::Function_MetaDataParams), Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AShooterCharacter::execDoStopSecondaryFire)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DoStopSecondaryFire();
+	P_NATIVE_END;
+}
+// ********** End Class AShooterCharacter Function DoStopSecondaryFire *****************************
 
 // ********** Begin Class AShooterCharacter Function DoSwitchWeapon ********************************
 struct Z_Construct_UFunction_AShooterCharacter_DoSwitchWeapon_Statics
@@ -267,7 +339,9 @@ void AShooterCharacter::StaticRegisterNativesAShooterCharacter()
 	UClass* Class = AShooterCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "DoStartFiring", &AShooterCharacter::execDoStartFiring },
+		{ "DoStartSecondaryFire", &AShooterCharacter::execDoStartSecondaryFire },
 		{ "DoStopFiring", &AShooterCharacter::execDoStopFiring },
+		{ "DoStopSecondaryFire", &AShooterCharacter::execDoStopSecondaryFire },
 		{ "DoSwitchWeapon", &AShooterCharacter::execDoSwitchWeapon },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -335,6 +409,16 @@ struct Z_Construct_UClass_AShooterCharacter_Statics
 		{ "ModuleRelativePath", "Variant_Shooter/ShooterCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fire weapon input action" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SecondaryFireAction_MetaData[] = {
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Secondary fire weapon input action\n" },
+#endif
+		{ "ModuleRelativePath", "Variant_Shooter/ShooterCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Secondary fire weapon input action" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SwitchWeaponAction_MetaData[] = {
@@ -410,6 +494,7 @@ struct Z_Construct_UClass_AShooterCharacter_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PawnNoiseEmitter;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FireAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SecondaryFireAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SwitchWeaponAction;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_FirstPersonWeaponSocket;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ThirdPersonWeaponSocket;
@@ -422,7 +507,9 @@ struct Z_Construct_UClass_AShooterCharacter_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_AShooterCharacter_BP_OnDeath, "BP_OnDeath" }, // 3587027520
 		{ &Z_Construct_UFunction_AShooterCharacter_DoStartFiring, "DoStartFiring" }, // 3772532036
+		{ &Z_Construct_UFunction_AShooterCharacter_DoStartSecondaryFire, "DoStartSecondaryFire" }, // 1829739708
 		{ &Z_Construct_UFunction_AShooterCharacter_DoStopFiring, "DoStopFiring" }, // 1034790919
+		{ &Z_Construct_UFunction_AShooterCharacter_DoStopSecondaryFire, "DoStopSecondaryFire" }, // 3065316374
 		{ &Z_Construct_UFunction_AShooterCharacter_DoSwitchWeapon, "DoSwitchWeapon" }, // 2695605878
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -434,6 +521,7 @@ struct Z_Construct_UClass_AShooterCharacter_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_PawnNoiseEmitter = { "PawnNoiseEmitter", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, PawnNoiseEmitter), Z_Construct_UClass_UPawnNoiseEmitterComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PawnNoiseEmitter_MetaData), NewProp_PawnNoiseEmitter_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_FireAction = { "FireAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, FireAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FireAction_MetaData), NewProp_FireAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_SecondaryFireAction = { "SecondaryFireAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, SecondaryFireAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SecondaryFireAction_MetaData), NewProp_SecondaryFireAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_SwitchWeaponAction = { "SwitchWeaponAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, SwitchWeaponAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SwitchWeaponAction_MetaData), NewProp_SwitchWeaponAction_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_FirstPersonWeaponSocket = { "FirstPersonWeaponSocket", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, FirstPersonWeaponSocket), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FirstPersonWeaponSocket_MetaData), NewProp_FirstPersonWeaponSocket_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AShooterCharacter_Statics::NewProp_ThirdPersonWeaponSocket = { "ThirdPersonWeaponSocket", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterCharacter, ThirdPersonWeaponSocket), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ThirdPersonWeaponSocket_MetaData), NewProp_ThirdPersonWeaponSocket_MetaData) };
@@ -444,6 +532,7 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShooterCharact
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_PawnNoiseEmitter,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_FireAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_SecondaryFireAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_SwitchWeaponAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_FirstPersonWeaponSocket,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterCharacter_Statics::NewProp_ThirdPersonWeaponSocket,
@@ -492,10 +581,10 @@ AShooterCharacter::~AShooterCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h__Script_PortalGun_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShooterCharacter, AShooterCharacter::StaticClass, TEXT("AShooterCharacter"), &Z_Registration_Info_UClass_AShooterCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterCharacter), 2833274031U) },
+		{ Z_Construct_UClass_AShooterCharacter, AShooterCharacter::StaticClass, TEXT("AShooterCharacter"), &Z_Registration_Info_UClass_AShooterCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterCharacter), 3680215248U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h__Script_PortalGun_3977538325(TEXT("/Script/PortalGun"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h__Script_PortalGun_3994131477(TEXT("/Script/PortalGun"),
 	Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h__Script_PortalGun_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h__Script_PortalGun_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

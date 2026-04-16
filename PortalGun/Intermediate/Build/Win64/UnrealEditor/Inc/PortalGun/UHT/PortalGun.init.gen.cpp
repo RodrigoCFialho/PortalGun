@@ -29,13 +29,13 @@ void EmptyLinkFunctionForGeneratedCodePortalGun_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7D38B4D7,
-				0xE5298EF3,
+				0x74153747,
+				0xCF2DB1FB,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_PortalGun.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_PortalGun.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_PortalGun(Z_Construct_UPackage__Script_PortalGun, TEXT("/Script/PortalGun"), Z_Registration_Info_UPackage__Script_PortalGun, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x7D38B4D7, 0xE5298EF3));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_PortalGun(Z_Construct_UPackage__Script_PortalGun, TEXT("/Script/PortalGun"), Z_Registration_Info_UPackage__Script_PortalGun, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x74153747, 0xCF2DB1FB));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

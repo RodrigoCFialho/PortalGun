@@ -33,6 +33,8 @@ PORTALGUN_API void FDamagedDelegate_DelegateWrapper(const FMulticastScriptDelega
 // ********** Begin Class AShooterCharacter ********************************************************
 #define FID_Users_rodri_Documents_GitHub_PortalGun_PortalGun_Source_PortalGun_Variant_Shooter_ShooterCharacter_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDoSwitchWeapon); \
+	DECLARE_FUNCTION(execDoStopSecondaryFire); \
+	DECLARE_FUNCTION(execDoStartSecondaryFire); \
 	DECLARE_FUNCTION(execDoStopFiring); \
 	DECLARE_FUNCTION(execDoStartFiring);
 
